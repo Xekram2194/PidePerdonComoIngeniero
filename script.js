@@ -28,7 +28,7 @@ document.getElementById('siBtn').addEventListener('click', function() {
 
     // Mostrar el mensaje específico
     document.getElementById('messageContainer').style.display = 'block';
-    document.getElementById('messageContainer').innerHTML = 'Que feliz soy! TE AMO ';
+    document.getElementById('messageContainer').innerHTML = 'TE AMO ';
     document.getElementById('question').innerHTML = mensajeLargo;
     var question2 = document.getElementById('question2');
     var zzz = document.getElementById('zzz');
