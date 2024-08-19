@@ -1,3 +1,11 @@
+const urlParams = new URLSearchParams(window.location.search);
+const nombre = urlParams.get('nombre');
+const mensaje = urlParams.get('mensaje');
+const mensajeLargo = urlParams.get('mensajeLargo');
+
+document.getElementById('mensajePersonalizado').innerText = mensaje;
+document.getElementById('nombrePersonalizado').innerText = `${nombre}`;
+
 let noButtonClickCount = 0; // Contador para el botón "No"
 let noButtonState = 0; // Estado actual del botón "No"
 
@@ -21,7 +29,7 @@ document.getElementById('siBtn').addEventListener('click', function() {
     // Mostrar el mensaje específico
     document.getElementById('messageContainer').style.display = 'block';
     document.getElementById('messageContainer').innerHTML = 'Que feliz soy! TE AMO ';
-    document.getElementById('question').innerHTML = 'Te espero en la biblioteca estare hasta que vengas';
+    document.getElementById('question').innerHTML = mensajeLargo;
     var question2 = document.getElementById('question2');
     var zzz = document.getElementById('zzz');
     question2.innerHTML = 'Tienes un gran corazón';
