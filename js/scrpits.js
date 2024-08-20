@@ -3,7 +3,7 @@ async function acortarEnlace(urlLargo) {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'ZxARBTSGy4U4So0kbPLotC6fU0jzHhhfUNkxCB34cFhv2rh9i2CCwuhZMEXl'  // Reemplaza con tu token de TinyURL
+            'Authorization': 'Bearer ZxARBTSGy4U4So0kbPLotC6fU0jzHhhfUNkxCB34cFhv2rh9i2CCwuhZMEXl'  // Reemplaza con tu token de TinyURL
         },
         body: JSON.stringify({
             url: urlLargo,
